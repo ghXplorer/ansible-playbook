@@ -8,7 +8,6 @@
     - nginx
 
   tasks:
-
     - name: install and check nano text editor
       apt:
         name: nano
@@ -23,7 +22,6 @@
     - mysql
 
   tasks:
-
     - name: install and check nano text editor
       apt:
         name: nano
