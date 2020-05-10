@@ -1,0 +1,30 @@
+---
+
+- name: WebServer configuration
+  #gather_facts: false
+  hosts: webserver
+
+  roles:
+    - nginx
+
+  tasks:
+
+    - name: install and check nano text editor
+      apt:
+        name: nano
+        state: latest
+
+
+- name: Database server configuration
+  #gather_facts: false
+  hosts: database
+
+  roles:
+    - mysql
+
+  tasks:
+
+    - name: install and check nano text editor
+      apt:
+        name: nano
+        state: latest
